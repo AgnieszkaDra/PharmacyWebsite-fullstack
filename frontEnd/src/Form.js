@@ -38,7 +38,7 @@ export const Form = () => {
     }
 
     try {
-      const response = await axios.post('http://localhost:8081/', formData)
+      const response = await axios.post('https://pharmacywebsite-fullstack-4.onrender.com', formData)
       // setSuccessMessage('Formed is send successfully')
       console.log('Data saved:', response.data)
     } catch (error) {
